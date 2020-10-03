@@ -17,7 +17,7 @@ function payload_finished() {
 
 function check_jb_finished() {
   if (main_ret == 179 || main_ret == 0) {
-    document.write("<h1 style='color:yellow;font-size: 45px;'>Jailbreak Success! Loading payload, please wait...</h1>");
+    document.write("<h1 style='color:grey;font-size: 45px;'>Jailbreak Success! Loading payload, please wait...</h1>");
     //read_ptr_at(0);
     setTimeout(function(){ load_payload() }, 1500);
   } else {
